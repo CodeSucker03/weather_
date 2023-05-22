@@ -3,7 +3,7 @@ import { setLocationObject,
          getCoordsFromApi,
          getWeatherFromCoords,
          cleanText,
-         getDailyWeatherFromCoords } from "./dataFunction.js";
+         } from "./dataFunction.js";
 import { setPlaceHolderText,
          addSpinner,
          displayError,
@@ -157,10 +157,10 @@ const submitNewLocation = async(event)=>{
 const updateDataAndDisplay = async (locationObj) =>{
     // console.log(locationObj)
      const weatherJson = await getWeatherFromCoords(locationObj);
-     const weatherJsonDaily = await getDailyWeatherFromCoords(locationObj);
+    //  const weatherJsonDaily = await getDailyWeatherFromCoords(locationObj);
     // console.log(weatherJsonDaily)
      
-     if(weatherJson) updateDisplay(weatherJson,locationObj,weatherJsonDaily);
+     if(weatherJson) updateDisplay(weatherJson,locationObj);
      
 }
  

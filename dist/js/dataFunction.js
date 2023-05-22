@@ -40,7 +40,7 @@ export const getWeatherFromCoords = async(locationObj)=>{
         console.log(weatherJson)
         return weatherJson;
     }catch(err){
-        console.log(err)
+        console.error(err);
     }
 };
 
@@ -72,7 +72,7 @@ export const getCoordsFromApi = async(entryText,units)=>{
         const jsonData = await dataStream.json();
         return jsonData;
         }catch(err){
-             console.log(err)
+             console.error(err)
         }
 };
 export const cleanText = (text)=>{
@@ -82,17 +82,17 @@ export const cleanText = (text)=>{
     return entryText
 }
 
-export const getDailyWeatherFromCoords = async(locationObj)=>{
-    const lat = locationObj.getLat();
-    const lon = locationObj.getLon();
-    const units = locationObj.getUnit();
-    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`;
-    try{
-        const weatherStream = await fetch(url);
-        const weatherJsonDaily = await weatherStream.json();
-        // console.log(weatherJsonDaily);
-        return weatherJsonDaily;
-    }catch(err){
-        console.log(err)
-    }
-};
+// export const getDailyWeatherFromCoords = async(locationObj)=>{
+//     const lat = locationObj.getLat();
+//     const lon = locationObj.getLon();
+//     const units = locationObj.getUnit();
+//     const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`;
+//     try{
+//         const weatherStream = await fetch(url);
+//         const weatherJsonDaily = await weatherStream.json();
+//         // console.log(weatherJsonDaily);
+//         return weatherJsonDaily;
+//     }catch(err){
+//         console.log(err)
+//     }
+// };
