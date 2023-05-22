@@ -57,7 +57,7 @@ const toProperCase = (text)=>{
     return properWords.join(" ");
 
 }
-export const updateDisplay = (weatherJson, locationObj, weatherJsonDaily)=>{
+export const updateDisplay = (weatherJson, locationObj)=>{
     fadeDisplay();
     clearDisplay();
     const weatherClass = getWeatherClass(weatherJson.weather[0].icon)
@@ -76,7 +76,7 @@ export const updateDisplay = (weatherJson, locationObj, weatherJsonDaily)=>{
     // displaySixDayForecast();
     setFocusOnSearch();
     fadeDisplay();
-    const currentConditions = document.getElementById("currentForecast_conditions");
+    
     
    
 }
