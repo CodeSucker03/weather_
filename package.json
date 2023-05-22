@@ -8,5 +8,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSucker03/weather_.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/CodeSucker03/weather_/issues"
+  },
+  "homepage": "https://github.com/CodeSucker03/weather_#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  }
 }
