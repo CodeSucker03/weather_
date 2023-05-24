@@ -40,7 +40,7 @@ export const getWeatherFromCoords = async(locationObj)=>{
         console.log(weatherJson)
         return weatherJson;
     }catch(err){
-        console.error(err);
+        console.log(err);
     }
 };
 
