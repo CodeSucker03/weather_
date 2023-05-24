@@ -235,8 +235,8 @@ const translateIconToFontAwesome = (icon)=>{
     return i;
 }
 const displayCurrentConditions =(currentConditonsArray)=>{
-    // console.log(currentConditonsArray[1])
-    // console.log(typeof currentConditonsArray)
+    console.log(currentConditonsArray[1])
+    console.log(typeof currentConditonsArray)
     
     const ccContainer =document.getElementById("currentForecast_conditions");
     currentConditonsArray.forEach(cc =>{
