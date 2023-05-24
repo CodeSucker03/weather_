@@ -134,7 +134,7 @@ const submitNewLocation = async(event)=>{
     addSpinner(locationIcon);
     // console.log(currentLoc)
     const coordsData = await getCoordsFromApi(entryText,currentLoc.getUnit())
-    // console.log(coordsData)
+    console.log(coordsData)
     if(coordsData){
      if(coordsData.cod == 200){
         //work with api data
