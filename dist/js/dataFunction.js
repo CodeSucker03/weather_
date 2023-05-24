@@ -70,6 +70,7 @@ export const getCoordsFromApi = async(entryText,units)=>{
             body: JSON.stringify(urlDataObj)
         });
         const jsonData = await dataStream.json();
+        console.log(jsonData)
         return jsonData;
         }catch(err){
              console.error(err)
